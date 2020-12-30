@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/browser_actions_bg_grey"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="5dp"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="0dp"
+                android:padding="0dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="7dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp">
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.3dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:background="#afafaf" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/dot_dot_road"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="10dp"
+                        android:background="@color/transparent"
+                        android:scaleType="centerCrop"
+                        card_view:srcCompat="@drawable/road_location" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:baselineAligned="false"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <com.balysv.materialripple.MaterialRippleLayout
+                            android:id="@+id/ripple1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="0dp"
+                            app:mrl_rippleColor="#d6d4d4"
+                            app:mrl_rippleDuration="450"
+                            app:mrl_rippleFadeDuration="220"
+                            app:mrl_rippleHover="true">
+
+                            <EditText
+                                android:id="@+id/mymLocation"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#00ff0000"
+                                android:ellipsize="end"
+                                android:gravity="start|center_vertical"
+                                android:maxLines="1"
+                                android:inputType="text"
+                                android:paddingStart="@dimen/button_padding1"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="5dp"
+                                android:hint="Your Location"
+                                android:textAllCaps="false"
+                                android:textSize="@dimen/nml_dv_txt"
+                                android:visibility="visible" />
+
+
+                        </com.balysv.materialripple.MaterialRippleLayout>
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="11dp"
+                            android:layout_marginStart="78dp"
+                            android:background="@color/transparent"
+                            android:scaleType="fitCenter"
+                            card_view:srcCompat="@drawable/location__start" />
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <com.balysv.materialripple.MaterialRippleLayout
+                            android:id="@+id/ripple2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="0dp"
+                            app:mrl_rippleColor="#d6d4d4"
+                            app:mrl_rippleDuration="450"
+                            app:mrl_rippleFadeDuration="220"
+                            app:mrl_rippleHover="true" >
+
+                            <EditText
+                                android:id="@+id/dropoffLocation"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#00ff0000"
+                                android:ellipsize="end"
+                                android:gravity="left|center_vertical"
+                                android:maxLines="1"
+                                android:paddingStart="@dimen/button_padding1"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="5dp"
+                                android:hint="Choose your destination"
+                                android:inputType="text"
+                                android:textAllCaps="false"
+                                android:textSize="@dimen/nml_dv_txt" />
+                        </com.balysv.materialripple.MaterialRippleLayout>
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="10dp"
+                            android:background="@color/transparent"
+                            android:scaleType="fitCenter"
+                            card_view:srcCompat="@drawable/location__end" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/continue_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@color/yellow"
+        android:layout_marginBottom="10dp"
+        android:text="Continue"/>
+
+    <Button
+        android:id="@+id/cancel_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:textColor="@color/white"
+        android:background="@color/primaryColorRed"
+        android:layout_marginBottom="10dp"
+        android:text="Cancel"/>
+
+</LinearLayout>

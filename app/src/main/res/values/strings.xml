@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Hama2bebe</string>
+    <string name="phone_number">Please enter your mobile number to receive a verification code. Carrier rates may apply</string>
+
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+    <string name="wasiliana_nasi">Wasiliana nasi</string>
+    <string name="others">Mengineyo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="search_for_a_house">Search for a house</string>
+    <string name="description">Description</string>
+    <string name="masharti_kuhusu_aina_ya_mpangaji_unayemtaka">Masharti kuhusu aina ya mpangaji unayemtaka</string>
+    <string name="upload_house">Upload House</string>
+    <string name="total_rooms_jumla_ya_vyumba">Total Rooms (Jumla Ya Vyumba)</string>
+    <string name="house_details_maelezo_ya_nyumba">House Details/ Maelezo Ya Nyumba</string>
+    <string name="service_fee_tozo_ya_huduma">Service Fee (Tozo ya Huduma)</string>
+    <string name="price">Price :</string>
+    <string name="available">Available</string>
+</resources>

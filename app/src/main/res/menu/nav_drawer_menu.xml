@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_usafiri"
+            android:icon="@drawable/ic_baseline_directions_car_24"
+            android:title="Usafiri" />
+
+        <item
+            android:id="@+id/nav_makazi"
+            android:icon="@drawable/ic_baseline_home_work_24"
+            android:title="Makazi" />
+
+        <item
+            android:id="@+id/nav_usafi"
+            android:icon="@drawable/ic_baseline_cleaning_services_24"
+            android:title="Usafi" />
+
+    </group>
+
+    <item android:title="@string/wasiliana_nasi">
+
+        <menu>
+            <item
+                android:id="@+id/nav_whatsapp"
+                android:icon="@drawable/ic_baseline_local_phone_24"
+                android:title="WhatsApp" />
+
+            <item
+                android:id="@+id/nav_support"
+                android:icon="@drawable/ic_baseline_support_agent_24"
+                android:title="Msaada">
+
+            </item>
+
+        </menu>
+
+    </item>
+
+
+    <item android:title="@string/others">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_baseline_share_24"
+                android:title="Mshirikishe Rafiki" />
+
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/ic_baseline_star_half_24"
+                android:title="Rate" />
+
+        </menu>
+    </item>
+
+
+    <item
+        android:id="@+id/nav_house_add"
+        app:actionLayout="@layout/nav_drawer_darkmode_switch"
+        tools:ignore="MenuTitle" />
+
+</menu>
